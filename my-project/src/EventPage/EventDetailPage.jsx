@@ -3,6 +3,7 @@ import { useParams, useNavigate, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import API from "../api";
 import Navbar from "../components/Navbar/NavBar";
+import EventScheduleSection from "../CreateEvent/Eventschedulesection";
 
 const EASE = [0.16, 1, 0.3, 1];
 
@@ -313,6 +314,9 @@ export default function EventDetailPage() {
                         </div>
                     </div>
                 </motion.div>
+
+                {/* Schedule — departures, pickups, capacity, pricing */}
+                <EventScheduleSection eventId={event.event_id} />
 
                 {/* Classification */}
                 <Section title="Classification & requirements">

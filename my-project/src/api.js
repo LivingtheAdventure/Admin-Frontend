@@ -2,7 +2,7 @@ import axios from "axios";
 import { jwtDecode } from "jwt-decode";
 
 const API = axios.create({
-  baseURL: "https://backend-teal-chi-88.vercel.app/", // 🔥 replace
+  baseURL: "http://127.0.0.1:8000/", // 🔥 replace
 });
 
 // Request Interceptor
