@@ -2,9 +2,9 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import API from "../api";
 import Navbar from "../components/Navbar/NavBar";
-import ImageUploadField from "./ImageUploadField";
-import GalleryUploadField from "./GalleryUploadField";
-import TagListInput from "./TagListInput";
+import ImageUploadField from "./Imageuploadfield";
+import GalleryUploadField from "./Galleryuploadfield";
+import TagListInput from "./Taglistinput";
 
 const EVENT_TYPE_OPTIONS = ["trek", "adventure", "trip", "peak", "special_event"];
 const DIFFICULTY_OPTIONS = ["Easy", "Moderate", "Difficult", "Strenuous", "Extreme"];
